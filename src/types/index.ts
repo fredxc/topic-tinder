@@ -1,27 +1,30 @@
 export type ThemeKey =
-  | 'bohemian_wedding'
-  | 'classic_ballroom_wedding'
-  | 'rustic_barn_wedding'
-  | 'beach_destination_wedding'
-  | 'garden_floral_wedding'
-  | 'minimalist_modern_wedding'
-  | 'forest_elopement'
-  | 'luxury_glamour_wedding'
-  | 'vintage_retro_wedding'
-  | 'tropical_destination_wedding'
-  | 'industrial_urban_wedding'
-  | 'fairytale_castle_wedding'
-  | 'casamento_brasileiro'
-  | 'casamento_campo_brasil'
-  | 'intimate_elopement';
+  | "bohemian_wedding"
+  | "classic_ballroom_wedding"
+  | "rustic_barn_wedding"
+  | "beach_destination_wedding"
+  | "garden_floral_wedding"
+  | "minimalist_modern_wedding"
+  | "forest_elopement"
+  | "luxury_glamour_wedding"
+  | "vintage_retro_wedding"
+  | "tropical_destination_wedding"
+  | "industrial_urban_wedding"
+  | "fairytale_castle_wedding"
+  | "casamento_brasileiro"
+  | "casamento_campo_brasil"
+  | "intimate_elopement"
+  | "outdoor_reception_dinner"
+  | "long_table_reception"
+  | "casual_garden_party";
 
 /** Five aesthetic dimensions used by the classifier */
 export interface DimensionWeights {
-  naturaleza: number;   // outdoor, organic, earthy, nature
-  tradicional: number;  // formal, classic, church, structured
-  romantico: number;    // soft, floral, dreamy, emotional
-  moderno: number;      // clean, minimal, contemporary, geometric
-  luxuoso: number;      // opulent, glamorous, grand, expensive
+  naturaleza: number; // outdoor, organic, earthy, nature
+  tradicional: number; // formal, classic, church, structured
+  romantico: number; // soft, floral, dreamy, emotional
+  moderno: number; // clean, minimal, contemporary, geometric
+  luxuoso: number; // opulent, glamorous, grand, expensive
 }
 
 export interface WeddingPhoto {
@@ -35,7 +38,7 @@ export interface WeddingPhoto {
   photographerUrl: string;
 }
 
-export type SwipeDirection = 'like' | 'dislike';
+export type SwipeDirection = "like" | "dislike";
 
 export interface SwipeRecord {
   photo: WeddingPhoto;
@@ -74,7 +77,7 @@ export interface WeddingProfile {
   totalSwipes: number;
 }
 
-export type AppPhase = 'loading' | 'swiping' | 'result';
+export type AppPhase = "loading" | "swiping" | "result";
 
 export interface AppState {
   phase: AppPhase;
