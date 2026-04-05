@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "wedding-tinder",
+      "runtimeExecutable": "/Users/fredxavier/.nvm/versions/node/v20.19.2/bin/node",
+      "runtimeArgs": ["/Users/fredxavier/Documents/projects/topic-tinder/node_modules/.bin/vite"],
+      "port": 5173,
+      "autoPort": true
+    }
+  ]
+}
